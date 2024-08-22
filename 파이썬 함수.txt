@@ -199,3 +199,11 @@ def input_numbers(n):
 # 함수 사용 예제
 n = int(input("숫자의 개수를 입력하세요: "))
 input_numbers(n)
+
+#문자열 원하는 개수만큼 왼쪽으로 회전
+def rotate_right(s, n):
+    return s[n:] + s[:n]
+
+#문자열 원하는 개수만큼 오른쪽으로 회전
+def rotate_right(s, n):
+    return s[-n:] + s[:-n]
