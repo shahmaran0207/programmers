@@ -207,3 +207,7 @@ def rotate_right(s, n):
 #문자열 원하는 개수만큼 오른쪽으로 회전
 def rotate_right(s, n):
     return s[-n:] + s[:-n]
+
+combination(list,n): list 중 3개의 모든 조합을 구하는 함수
+## 약수의 대칭성
+### n의 약수들은 항상 대칭적으로 짝을 이룸 -> 소수인지 판별할 때 2부터 제곱근까지 나누어지는 것이 있는지만 확인하면 됨 -> 있으면 소수 아님
