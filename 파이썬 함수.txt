@@ -211,3 +211,15 @@ def rotate_right(s, n):
 combination(list,n): list 중 3개의 모든 조합을 구하는 함수
 ## 약수의 대칭성
 ### n의 약수들은 항상 대칭적으로 짝을 이룸 -> 소수인지 판별할 때 2부터 제곱근까지 나누어지는 것이 있는지만 확인하면 됨 -> 있으면 소수 아님
+
+#짝수는 무조건 소수 아님
+
+#collections.Counter: 각 요소가 몇 번나오는지 딕셔너리 형태로 카운팅 dictionary:횟수
+- > import collections
+
+def solution(participant, completion):
+    # participant와 completion 리스트의 각 요소의 개수를 세기 위한 Counter 객체 생성
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    
+    # answer는 남아있는 카운트를 갖는 Counter 객체이므로, 그 키 중 첫 번째를 반환
+    return list(answer.keys())[0]
