@@ -224,3 +224,5 @@ def solution(participant, completion):
     
     # answer는 남아있는 카운트를 갖는 Counter 객체이므로, 그 키 중 첫 번째를 반환
     return list(answer.keys())[0]
+
+#range는 숫자 시퀀스를 생성 -> 즉, 집합에는 사용할 수 없음 -> 내용물을 직접 다루는 sorted가 필요함
